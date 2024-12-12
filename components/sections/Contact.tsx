@@ -20,7 +20,9 @@ export function Contact() {
   return (
     <section id="contact" className="py-20 bg-neutral-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl text-center mb-16 font-light">CONTACT</h2>
+        <h2 className="text-3xl md:text-4xl text-center mb-16 font-light">
+          CONTACT
+        </h2>
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div className="space-y-8">
             <div className="flex items-center space-x-4">
@@ -29,7 +31,7 @@ export function Contact() {
             </div>
             <div className="flex items-center space-x-4">
               <Phone className="w-6 h-6 text-neutral-600" />
-              <p>+33 6 12 34 56 78</p>
+              <p>+33 6 xx xx xx xx </p>
             </div>
             <div className="flex items-center space-x-4">
               <MapPin className="w-6 h-6 text-neutral-600" />
@@ -37,11 +39,7 @@ export function Contact() {
             </div>
           </div>
           <form onSubmit={handleSubmit} className="space-y-6">
-            <Input
-              placeholder="Nom"
-              required
-              className="bg-white"
-            />
+            <Input placeholder="Nom" required className="bg-white" />
             <Input
               type="email"
               placeholder="Email"
