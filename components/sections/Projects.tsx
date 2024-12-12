@@ -4,20 +4,46 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     title: "Le Grand Hôtel",
-    description: "Reconstitution d'un palace des années 20 pour ce drame historique",
-    image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3",
+    description:
+      "Reconstitution d'un palace des années 20 pour ce drame historique",
+    image:
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3",
     link: "#",
   },
   {
     title: "Nuit Parisienne",
     description: "Décors authentiques du Paris des années 50",
-    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3",
+    image:
+      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3",
     link: "#",
   },
   {
     title: "L'Appartement",
     description: "Design contemporain pour ce thriller psychologique",
-    image: "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3",
+    image:
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3",
+    link: "#",
+  },
+  {
+    title: "Le Grand Hôtel",
+    description:
+      "Reconstitution d'un palace des années 20 pour ce drame historique",
+    image:
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3",
+    link: "#",
+  },
+  {
+    title: "Nuit Parisienne",
+    description: "Décors authentiques du Paris des années 50",
+    image:
+      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3",
+    link: "#",
+  },
+  {
+    title: "L'Appartement",
+    description: "Design contemporain pour ce thriller psychologique",
+    image:
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3",
     link: "#",
   },
 ];
@@ -26,7 +52,9 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl text-center mb-16 font-light">PROJETS RÉCENTS</h2>
+        <h2 className="text-3xl md:text-4xl text-center mb-16 font-light">
+          PROJETS RÉCENTS
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
@@ -46,7 +74,7 @@ export function Projects() {
                 <p className="text-center mb-6">{project.description}</p>
                 <Button
                   variant="outline"
-                  className="text-white border-white hover:bg-white hover:text-black"
+                  className="bg-black bg-opacity-50 text-white border-white hover:bg-white hover:text-black transition-all backdrop-blur-md"
                   onClick={() => window.open(project.link, "_blank")}
                 >
                   Voir le projet

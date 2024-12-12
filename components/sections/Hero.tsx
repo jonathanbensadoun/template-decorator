@@ -4,7 +4,10 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center">
+    <section
+      id="home"
+      className="relative h-screen flex items-center justify-center"
+    >
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?ixlib=rb-4.0.3"
@@ -21,8 +24,12 @@ export function Hero() {
         </p>
         <Button
           variant="outline"
-          className="text-white border-white hover:bg-white hover:text-black transition-all"
-          onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+          className="bg-black bg-opacity-50 text-white border-white hover:bg-white hover:text-black transition-all backdrop-blur-md"
+          onClick={() =>
+            document
+              .getElementById("projects")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }
         >
           Découvrir mes projets
         </Button>
